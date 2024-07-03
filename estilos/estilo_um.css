@@ -1,0 +1,283 @@
+
+* {
+    margin: 3px 0px 0px 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Mukta;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container geral */
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    position: relative;
+}
+
+
+header .logo img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+
+
+    position: relative;
+}
+.logoSlogan{
+	padding: 0px 760px 0px 0px;
+	margin: 0;
+}
+.welcome{
+    margin: auto;
+    padding: 0px;
+    position: absolute;
+}
+.pWelcome{
+    vertical-align: inherit;
+    text-align: justify;
+  color: rgb(133, 121, 109);
+  font-family: Philosopher;
+  font-weight: 400;
+  font-size: 20.56px;
+  white-space: pre-line;
+}
+header h1 {
+    margin-top: 10px;
+    font-size: 2.5em;
+}
+
+/* Floating menu styling */
+.menu-flutuante {
+    background-color: white;
+    position: fixed;
+    top: -7px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-flutuante ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3px;
+    margin: 0px 0px 0px 682px;
+}
+
+.menu-flutuante ul li {
+    margin: 0 15px;
+}
+
+.menu-flutuante ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-flutuante ul li a:hover {
+    
+    color: grey;
+}
+
+/* Main styling */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 70px; /* Adjust to avoid overlap with floating menu */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+#sobre {
+    text-align: justify;
+    background-color: rgb(57, 49, 53);
+    color: white;
+    line-height: 1.6;
+}
+#h2Sobre{
+    margin: 0px;
+  width: 100%;
+  text-align: left;
+  font-family: Philosopher;
+  font-weight: 400;
+  font-size: 43.4px;
+  position: relative;
+  white-space: pre-line;
+  padding: 0;
+}
+
+#sobre img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#sobre div {
+    flex: 1;
+    min-width: 250px;
+}
+.servico{
+    vertical-align: inherit;
+    text-align: left;
+  color: rgb(133, 121, 109);
+  font-family: Philosopher;
+  font-weight: 400;
+  font-size: 20.56px;
+  white-space: pre-line;
+
+}
+.sobreServico{
+    vertical-align: inherit;
+    text-align: left;
+  color: rgb(57, 49, 53);
+  font-family: Mukta;
+  font-weight: 400;
+  font-size: 18.56px;
+  line-height: 1.4;
+  white-space: pre-line;
+  word-break: break-word;
+}
+#h2Servicos {
+    margin: 0px;
+  width: 100%;
+  text-align: left;
+  color: rgb(133, 121, 109);
+  font-family: Philosopher;
+  font-weight: 400;
+  font-size: 43.4px;
+  position: relative;
+  white-space: pre-line;
+  padding: 0;
+}
+
+.servicosConteudo{
+    width: 100%;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  font-weight: 400;
+ 
+}
+
+.odonto{
+    width: 30%;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+  padding: 0px 0px 0px 0px;
+}
+.informatica{
+    width: 30%;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+  padding: 0px 0px 0px 0px;
+}
+.engcivil{
+    width: 30%;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+}
+.elipseOdonto {
+    width: 300px; /* largura da elipse */
+    height: 217px; /* altura da elipse */
+    border-radius: 50%; /* torna a borda redonda, formando uma elipse */
+    overflow: hidden; /* oculta qualquer conteúdo que ultrapasse os limites da elipse */
+}
+.elipseInformatica {
+    width: 300px; /* largura da elipse */
+    height: 217px; /* altura da elipse */
+    border-radius: 50%; /* torna a borda redonda, formando uma elipse */
+    overflow: hidden; /* oculta qualquer conteúdo que ultrapasse os limites da elipse */
+}
+.elipseEngCivil {
+    width: 300px; /* largura da elipse */
+    height: 217px; /* altura da elipse */
+    border-radius: 50%; /* torna a borda redonda, formando uma elipse */
+    overflow: hidden; 
+}
+
+.elipseSobre {
+    width: 300px; 
+    height: 217px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+.elipseSobre img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-responsiva{
+    margin: 0;
+    padding: 23px 0px 0px 0px;
+    width: 99%;
+}
+.img-responsiva2{
+    margin: 0;
+    padding: 23px 0px 0px 0px;
+    width: 99%;
+}
+#contactos{
+    color: white;
+    background-color: rgb(57, 49, 53);
+}
+
+footer {
+    color: white;
+    background-color: rgb(57, 49, 53);
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    .menu-flutuante ul {
+        flex-direction: column;
+    }
+    .menu-flutuante ul li {
+        margin: 5px 0;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+}
