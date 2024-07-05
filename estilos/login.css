@@ -13,7 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../imagens/family.png');
+    background-image: url('../imagens/family.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
