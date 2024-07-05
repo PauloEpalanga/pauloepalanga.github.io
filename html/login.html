@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="../estilos/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="buttonsForm">
+            <div class="btnColor"></div>
+            <button id="btnSignin">Sign in</button>
+            <button id="btnSignup">Criar Conta</button>
+        </div>
+        <form id="signin">
+            <input type="text" id="email" placeholder="Email" required>
+            <i class="fa-regular fa-envelope iEmail"></i>
+
+            <input type="password" id="password" placeholder="Senha" required>
+            <i class="fa-solid fa-lock iPassword"></i>
+
+            <div class="divCheck">
+                <input type="checkbox" id="remember">
+                <span>Lembrar Senha</span>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+
+        <form id="signup">
+            <input type="text" id="emailSignup" placeholder="Email" required>
+            <i class="fa-regular fa-envelope iEmail"></i>
+
+            <input type="password" id="passwordSignup" placeholder="Senha" required>
+            <i class="fa-solid fa-lock iPassword"></i>
+
+            <input type="password" id="password2Signup" placeholder="Confirmar Senha" required>
+            <i class="fa-solid fa-lock iPassword2"></i>
+
+            <div class="divCheck">
+                <input type="checkbox" id="terms" required>
+                <span>Termos</span>
+            </div>
+            <button type="submit">Criar Conta</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>
+</html>
