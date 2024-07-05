@@ -1,13 +1,15 @@
+/* Importando as fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@400;700&display=swap');
 
 * {
-    margin: 3px 0px 0px 0px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* Body styling */
 body {
-    font-family: Mukta;
+    font-family: 'Open Sans', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -27,43 +29,44 @@ header {
     position: relative;
 }
 
-
 header .logo img {
     width: 80px;
     height: auto;
     border-radius: 50%;
-
-
     position: relative;
 }
-.logoSlogan{
-	padding: 0px 760px 0px 0px;
-	margin: 0;
+
+.logoSlogan {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.welcome{
-    margin: auto;
-    padding: 0px;
-    position: absolute;
-}
-.pWelcome{
-    vertical-align: inherit;
-    text-align: justify;
-  color: rgb(133, 121, 109);
-  font-family: Philosopher;
-  font-weight: 400;
-  font-size: 20.56px;
-  white-space: pre-line;
-}
-header h1 {
+
+.welcome {
     margin-top: 10px;
+    text-align: center;
+}
+
+.pWelcome {
+    color: rgb(133, 121, 109);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20.56px;
+    white-space: pre-line;
+}
+
+header h2 {
+    font-family: 'Raleway', sans-serif;
     font-size: 2.5em;
+    margin: 10px 0;
 }
 
 /* Floating menu styling */
 .menu-flutuante {
     background-color: white;
     position: fixed;
-    top: -7px;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -76,8 +79,7 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 3px;
-    margin: 0px 0px 0px 682px;
+    padding: 10px;
 }
 
 .menu-flutuante ul li {
@@ -94,190 +96,240 @@ header h1 {
 }
 
 .menu-flutuante ul li a:hover {
-    
     color: grey;
 }
 
 /* Main styling */
 main {
     flex: 1;
-    padding: 20px;
-    text-align: center;
-    margin-top: 70px; /* Adjust to avoid overlap with floating menu */
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-}
-
+/* About Section */
 #sobre {
-    text-align: justify;
-    background-color: rgb(57, 49, 53);
-    color: white;
-    line-height: 1.6;
-}
-#h2Sobre{
-    margin: 0px;
-  width: 100%;
-  text-align: left;
-  font-family: Philosopher;
-  font-weight: 400;
-  font-size: 43.4px;
-  position: relative;
-  white-space: pre-line;
-  padding: 0;
+    background-color: #f4f4f4;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#sobre img {
-    width: 100%;
-    max-width: 300px;
+#sobre h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.img-responsiva {
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-#sobre div {
+/* Services Section */
+#servicos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#servicos h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.servicosConteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.servicosConteudo div {
     flex: 1;
     min-width: 250px;
-}
-.servico{
-    vertical-align: inherit;
-    text-align: left;
-  color: rgb(133, 121, 109);
-  font-family: Philosopher;
-  font-weight: 400;
-  font-size: 20.56px;
-  white-space: pre-line;
-
-}
-.sobreServico{
-    vertical-align: inherit;
-    text-align: left;
-  color: rgb(57, 49, 53);
-  font-family: Mukta;
-  font-weight: 400;
-  font-size: 18.56px;
-  line-height: 1.4;
-  white-space: pre-line;
-  word-break: break-word;
-}
-#h2Servicos {
-    margin: 0px;
-  width: 100%;
-  text-align: left;
-  color: rgb(133, 121, 109);
-  font-family: Philosopher;
-  font-weight: 400;
-  font-size: 43.4px;
-  position: relative;
-  white-space: pre-line;
-  padding: 0;
-}
-
-.servicosConteudo{
-    width: 100%;
-  display: flex;
-  -moz-box-pack: center;
-  justify-content: center;
-  -moz-box-align: center;
-  align-items: center;
-  font-weight: 400;
- 
-}
-
-.odonto{
-    width: 30%;
-  -moz-box-flex: 1;
-  flex-grow: 1;
-  display: flex;
-  row-gap: 20px;
-  flex-direction: column;
-  padding: 0px 0px 0px 0px;
-}
-.informatica{
-    width: 30%;
-  -moz-box-flex: 1;
-  flex-grow: 1;
-  display: flex;
-  row-gap: 20px;
-  flex-direction: column;
-  padding: 0px 0px 0px 0px;
-}
-.engcivil{
-    width: 30%;
-  -moz-box-flex: 1;
-  flex-grow: 1;
-  display: flex;
-  row-gap: 20px;
-  flex-direction: column;
-}
-.elipseOdonto {
-    width: 300px; /* largura da elipse */
-    height: 217px; /* altura da elipse */
-    border-radius: 50%; /* torna a borda redonda, formando uma elipse */
-    overflow: hidden; /* oculta qualquer conteúdo que ultrapasse os limites da elipse */
-}
-.elipseInformatica {
-    width: 300px; /* largura da elipse */
-    height: 217px; /* altura da elipse */
-    border-radius: 50%; /* torna a borda redonda, formando uma elipse */
-    overflow: hidden; /* oculta qualquer conteúdo que ultrapasse os limites da elipse */
-}
-.elipseEngCivil {
-    width: 300px; /* largura da elipse */
-    height: 217px; /* altura da elipse */
-    border-radius: 50%; /* torna a borda redonda, formando uma elipse */
-    overflow: hidden; 
-}
-
-.elipseSobre {
-    width: 300px; 
-    height: 217px; 
-    border-radius: 50%; 
-    overflow: hidden; 
-}
-.elipseSobre img {
-    width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.img-responsiva{
-    margin: 0;
-    padding: 23px 0px 0px 0px;
-    width: 99%;
-}
-.img-responsiva2{
-    margin: 0;
-    padding: 23px 0px 0px 0px;
-    width: 99%;
-}
-#contactos{
-    color: white;
-    background-color: rgb(57, 49, 53);
-}
-
-footer {
-    color: white;
-    background-color: rgb(57, 49, 53);
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
     text-align: center;
-    padding: 15px 0;
 }
 
+.servicosConteudo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-    .menu-flutuante ul {
-        flex-direction: column;
-    }
-    .menu-flutuante ul li {
-        margin: 5px 0;
-    }
-    .flex-container {
-        flex-direction: column;
-    }
+.servico {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.sobreServico {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Contact Section */
+#contactos {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#contactos .section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#contactos .section-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    max-width: 400px; /* Limita a largura das caixas de texto */
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links ul li {
+    font-size: 1.5em;
+}
+
+.social-links ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links ul li a:hover {
+    color: #555;
+}
+
+/* Section Divider */
+.section-divider {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin: 50px 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
 }
