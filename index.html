@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog da Família Fernandes Epalanga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/estilo_um.css">
 </head>
 <body>
@@ -11,27 +12,26 @@
         <header>
             <section id="inicio">
                 <h2 id="h2Servicos"></h2>
-                
-            
-        	<div class="logoSlogan">
-        
-            		<div class="logo">
-                		<img src="imagens/logo.png" alt="Família Fernandes Epalanga">
-            		</div>
-            		<h2 id="h2Servicos">Família Fernandes Epalanga</h2>
-           	 	<h4 class="servico">***A vida é melhor em família***</h4>
-                <div class="welcome">  
-                    <p class="pWelcome">Bem-vindo ao blog da Família Fernandes Epalanga, onde a união familiar e os serviços oferecidos são apresentados com carinho e dedicação. Conheça mais sobre a nossa família e descubra os serviços que temos para oferecer.</p>
-            	</div>
-            </div>
-        </section>
+                <div class="logoSlogan">
+                    <div class="logo">
+                        <img src="imagens/logo.png" alt="Família Fernandes Epalanga">
+                    </div>
+                    <h2 id="h2Servicos">Família Fernandes Epalanga</h2>
+                    <h4 class="servico">***A vida é melhor em família***</h4>
+                    <div class="welcome">  
+                        <p class="pWelcome">Bem-vindo ao blog da Família Fernandes Epalanga, onde a união familiar e os serviços oferecidos são apresentados com carinho e dedicação. Conheça mais sobre a nossa família e descubra os serviços que temos para oferecer.</p>
+                    </div>
+                </div>
+            </section>
         </header>
+        <hr class="section-divider">
         <nav class="menu-flutuante">
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#contactos">Contactos</a></li>
+                <li><a href="./html/login.html">Login</a></li>
             </ul>
         </nav>
         <main>
@@ -40,76 +40,72 @@
                     <h2 id="h2Sobre">Sobre a nossa família</h2>
                     <p>Explore o universo da família Fernandes Epalanga neste blog, onde cada detalhe reflete a essência e a individualidade de cada membro. Sob a liderança da Família Fernandes Epalanga, compartilhamos histórias, dicas e momentos especiais que celebram a importância da família. Junte-se a nós nesta jornada de partilha e amor familiar.</p>
                 </div>
-                <div >
+                <div>
                     <img src="imagens/sobre.png" alt="Família Fernandes Epalanga" class="img-responsiva">
                 </div>
             </section>
+            <hr class="section-divider">
             <section id="servicos">
                 <h2 id="h2Servicos">Serviços que Oferecemos</h2>
                 <div class="servicosConteudo">
-                	<div class ="odonto">
-                        <div class =elipseOdonto>
-                		    <img src="imagens/odonto.png" alt="Serviços de Odontologia" class="img-responsiva">
+                    <div class="odonto">
+                        <div class="elipseOdonto">
+                            <img src="imagens/odonto.png" alt="Serviços de Odontologia" class="img-responsiva">
                         </div>
-                        <p class="servico">Odontologia e Enfermagem</p>             		
+                        <p class="servico">Odontologia e Enfermagem</p>
                         <p class="sobreServico">Prestação de serviços de saúde, cuidados de enfermagem e odontologia.</p>
-                	</div>
-                	<div class="informatica">
-                    		<p class="servico">Desenvolvimento de Softwares de Gestão</p>
-                            <p class="sobreServico">Softwares informáticos para gestão dos diversos espaços de negócio, para micro, pequenas, médias e até mesmo grandes empresas..</p>
-                   <div class =elipseInformatica>
-                        <img src="imagens/info.png" alt="Serviços de Informática" class="img-responsiva2">
-                	</div>
-                </div>
-                	<div class="engcivil">
-                		<div class =elipseEngCivil>
+                    </div>
+                    <div class="informatica">
+                        <p class="servico">Desenvolvimento de Softwares de Gestão</p>
+                        <p class="sobreServico">Softwares informáticos para gestão dos diversos espaços de negócio, para micro, pequenas, médias e até mesmo grandes empresas.</p>
+                        <div class="elipseInformatica">
+                            <img src="imagens/info.png" alt="Serviços de Informática" class="img-responsiva2">
+                        </div>
+                    </div>
+                    <div class="engcivil">
+                        <div class="elipseEngCivil">
                             <img src="imagens/engcivil.png" alt="Serviços de Arquitetura e Construção Civil" class="img-responsiva">
-                		</div>
+                        </div>
                         <p class="servico">Arquitetura e Construção Civil</p>
-                		<p class="sobreServico">Plantas, direcção de obras, projeções de estruturas e muitos outros serviços voltados à Engenharia das construções.</p>
-                	</div>
+                        <p class="sobreServico">Plantas, direção de obras, projeções de estruturas e muitos outros serviços voltados à Engenharia das construções.</p>
+                    </div>
                 </div>
             </section>
+            <hr class="section-divider">
             <section id="contactos">
-                <h2 id="h2Sobre">Contactos</h2>
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h2 class="section-title">Entre em Contato</h2>
-                            <p class="section-subtitle">Adoraríamos saber a sua opinião e sugestões para melhorar a nossa experiência familiar.</p>
-                            <form id="contact-form" action="send-email.php" method="post">
-                                <div class="form-group">
-                                    <label for="name">Nome</label>
-                                    <input type="text" class="form-control" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Messagem</label>
-                                    <textarea class="form-control" id="message" name="message" rows="5" required>Deixe sua mensagem</textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                            </form>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="contact-info">
-                                <h3>Informações de contacto</h3>
-                                <ul class="list-unstyled">
-                                    <li><i class="fa fa-phone"></i> +244 926 755 137</li>
-                                    <li><i class="fa fa-envelope"></i> ffernandesepalanga@gmail.com</li>
-                                </ul>
-                                <div class="social-links">
-                                    <h3>Siga-nos</h3>
-                                    <ul class="list-inline">
-                                        <li><a href="#"><i class="fa fa-facebook"></i>www.facebook.com</a>facebook</li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i>www.twitter.com</a>twitter</li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i>www.instagram.com</a>instagram</li>
-                                    </ul>
-                                </div>
+                <h2 class="section-title">Contactos</h2>
+                <p class="section-subtitle">Entre em contato conosco e saiba mais sobre os nossos serviços.</p>
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <form id="contact-form" action="send-email.php" method="post">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" required>
                             </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <ul>
+                            <li><i class="fa fa-phone"></i> +244 926 755 137</li>
+                            <li><i class="fa fa-envelope"></i> ffernandesepalanga@gmail.com</li>
+                        </ul>
+                        <div class="social-links">
+                            <h3>Siga-nos</h3>
+                            <ul>
+                                <li><a href="https://www.facebook.com/pauloepalangajr/"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="https://www.twitter.com/pauloepalangajr/"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="https://www.instagram.com/pauloepalangajr/"><i class="fa fa-instagram"></i> Instagram</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
